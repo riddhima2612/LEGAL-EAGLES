@@ -3,7 +3,7 @@ A professional and responsive website designed for a law firm, featuring service
 
 Key Features:
 
-Dynamic attorney profiles and service details
-Secure client inquiry and contact forms
-Integrated appointment booking system
+Dynamic attorney profiles and service details, 
+Secure client inquiry and contact forms, 
+Integrated appointment booking system, 
 Fully responsive design for desktop and mobile views
