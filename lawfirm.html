@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm Consultancy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 50
+                }, 1000);
+            }
+        });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            
+            
+            font-family: Arial, sans-serif;
+            background-color: #a9baca;
+            color: #0f1618;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: url("data:image/jpeg;base64,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");
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        nav img {
+            width: 150px;
+        }
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+        .container {
+            background-size: cover;
+            background-position: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .card {
+            background-color: #e2e8fc;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(139, 209, 236, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .btn-primary {
+            background-color: #343a40;
+            border-color: #343a40;
+        }
+        .btn-primary:hover {
+            background-color: #23272b;
+            border-color: #23272b;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Law Consultancy</h1>
+            <p>Your trusted legal advisors</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#services">Services</a>
+            <a href="#team">Our Team</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+                <section id="services">
+                    <div class="container">
+                        <h2>Services Offered</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card">
+                                    <h3>Civil Law</h3>
+                                    <p>Click the button below to learn more about civil law.</p>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#civil-law-info" aria-expanded="false" aria-controls="civil-law-info">
+                                        Show More
+                                    </button>
+                                    <div class="collapse" id="civil-law-info">
+                                        <div class="card card-body">
+                                            <p>Civil law is a legal system originating in Continental Europe and adopted in much of the world.</p>
+                                            <p>It is the most widespread system of law in the world, in force in various forms in about 150 countries worldwide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card">
+                                    <h3>Criminal Law</h3>
+                                    <p>Click the button below to learn more about criminal law.</p>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#criminal-law-info" aria-expanded="false" aria-controls="criminal-law-info">
+                                        Show More
+                                    </button>
+                                    <div class="collapse" id="criminal-law-info">
+                                        <div class="card card-body">
+                                            <p>Criminal law is the body of law that relates to crime. It regulates social conduct and proscribes threatening, harming, or otherwise endangering the health, safety, and moral welfare of people.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card">
+                                    <h3>Family Law</h3>
+                                    <p>Click the button below to learn more about family law.</p>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#family-law-info" aria-expanded="false" aria-controls="family-law-info">
+                                        Show More
+                                    </button>
+                                    <div class="collapse" id="family-law-info">
+                                        <div class="card card-body">
+                                            <p>Family law is an area of the law that deals with family matters and domestic relations, including marriage, civil unions, domestic partnerships, adoption, surrogacy, child abuse, child abduction, divorce, property settlements, alimony, child custody, child support, and parental responsibility orders.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+
+    <section id="team" class="bg-light">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>John Doe</h3>
+                        <p>Senior Lawyer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>Jane Smith</h3>
+                        <p>Legal Advisor</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <h3>David Johnson</h3>
+                        <p>Associate Attorney</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="card">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="4c5160d5-6917-48b2-9e50-7a32ea9cfbab">
+                        
+                            <!-- Form Inputs. Each input must have a name="" attribute -->
+                            <input type="text" name="name" placeholder="name" required>
+                            <input type="email" name="email" placeholder="email" required>
+                            <textarea name="message" placeholder="message" required></textarea>
+                            <button type="submit">Submit Form</button>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Law Firm Consultancy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
